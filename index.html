@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <header class="mt-5 mx-2">
+            <div class="d-flex">
+                <h1>KOHL`S</h1>
+                <div class="group-item">
+                    <div class="w-100 h-100">
+                        <label for="search" class="d-none"></label>
+                        <input type="text" placeholder="What are you looking for today?" id="search"
+                            onkeyup="_search(this)">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                <a href="" class="d-flex flex-column fz-25 text-dark bg-gray-hover p-3 rounded-1">
+                    <i class="bi-person-circle justify-content-center"></i>
+                    <p>Account</p>
+                </a>
+                <a href="" class="d-flex flex-column fz-25 text-dark bg-gray-hover p-3 rounded-1">
+                    <i class="bi-bag-fill justify-content-center"></i>
+                    <p>$0.00</p>
+                </a>
+            </div>
+        </header>
+
+        <!-- categories -->
+        <div class="container-fluid container-lg mt-5 pt-5 px-0">
+            <div class="row justify-content-end min-h-200">
+                <div class="col-auto">
+                    <div class="_dropdown" onclick="categories()">
+                        <p>sorted by: <span id="reposi">All</span></p>
+                        <i class="bi-caret-down border-start border-dark ps-2"></i>
+                    </div>
+                    <div class="_dropdown-item" >
+                        <ul class="px-0">
+                            <li>All</li>
+                            <li>Highest Price</li>
+                            <li>New Collection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- shoes section -->
+            <h3 class="notfound">Not Found!</h3>
+            <div class="row mb-4 justify-content-evenly border-bottom pb-5">
+                <div class="col-4 box-product">
+                    <figure class="w-75 mx-auto">
+                        <img src="img/2347517.webp" alt="" class="w-100 obj-cover">
+                    </figure>
+                    <div class="row align-items-end w-100 mx-auto">
+                        <p class="col-12 fz-20 text-secondary">Vans</p>
+                        <h4 class="col-auto">$41.22</h4>
+                        <span class="fz-13 col ps-2">sale</span>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col px-0">Vans® Filmore Hi Boys' High-Top Sneakers</div>
+                    </div>
+                </div>
+                <div class="col-4 box-product">
+                    <figure class="w-75 mx-auto">
+                        <img src="img/2801503_ALT.webp" alt="" class="w-100 obj-cover">
+                    </figure>
+                    <div class="row align-items-end w-100 mx-auto">
+                        <p class="col-12 fz-20 text-secondary">Lee</p>
+                        <h4 class="col-auto">$11.22</h4>
+                        <span class="fz-13 col ps-2">sale</span>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col px-0">Vans® Filmore Hi Boys' High-Top Sneakers</div>
+                    </div>
+                </div>
+                <div class="col-4 box-product">
+                    <figure class="w-75 mx-auto">
+                        <img src="img/2801503_Black_White.webp" alt="" class="w-100 obj-cover">
+                    </figure>
+                    <div class="row align-items-end w-100 mx-auto">
+                        <p class="col-12 fz-20 text-secondary">Dark Lee</p>
+                        <h4 class="col-auto">$31.22</h4>
+                        <span class="fz-13 col ps-2">sale</span>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col px-0">Vans® Filmore Hi Boys' High-Top Sneakers</div>
+                    </div>
+                </div>
+                <div class="col-4 box-product">
+                    <figure class="w-75 mx-auto">
+                        <img src="img/2921537_Black.webp" alt="" class="w-100 obj-cover">
+                    </figure>
+                    <div class="row align-items-end w-100 mx-auto">
+                        <p class="col-12 fz-20 text-secondary">Blue Lee</p>
+                        <h4 class="col-auto">$81.22</h4>
+                        <span class="fz-13 col ps-2">sale</span>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col px-0">Vans® Filmore Hi Boys' High-Top Sneakers</div>
+                    </div>
+                </div>
+
+
+                <div class="col-4 box-product">
+                    <figure class="w-75 mx-auto">
+                        <img src="img/5568306.webp" alt="" class="w-100 obj-cover">
+                    </figure>
+                    <div class="row align-items-end w-100 mx-auto">
+                        <p class="col-12 fz-20 text-secondary">Sport</p>
+                        <h4 class="col-auto">$35.22</h4>
+                        <span class="fz-13 col ps-2">sale</span>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col px-0">Vans® Filmore Hi Boys' High-Top Sneakers</div>
+                    </div>
+                </div>
+                <div class="col-4 box-product">
+                    <figure class="w-75 mx-auto">
+                        <img src="img/5211898_Black.webp" alt="" class="w-100 obj-cover">
+                    </figure>
+                    <div class="row align-items-end w-100 mx-auto">
+                        <p class="col-12 fz-20 text-secondary">Black Confort</p>
+                        <h4 class="col-auto">$36.00</h4>
+                        <span class="fz-13 col ps-2">sale</span>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col px-0">Vans® Filmore Hi Boys' High-Top Sneakers</div>
+                    </div>
+                </div>
+                <div class="col-4 box-product">
+                    <figure class="w-75 mx-auto">
+                        <img src="img/4913757.webp" alt="" class="w-100 obj-cover">
+                    </figure>
+                    <div class="row align-items-end w-100 mx-auto">
+                        <p class="col-12 fz-20 text-secondary">Lee Jordan</p>
+                        <h4 class="col-auto">45.06</h4>
+                        <span class="fz-13 col ps-2">sale</span>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col px-0">Vans® Filmore Hi Boys' High-Top Sneakers</div>
+                    </div>
+                </div>
+                <div class="col-4 box-product">
+                    <figure class="w-75 mx-auto">
+                        <img src="img/4321364_ALT.webp" alt="" class="w-100 obj-cover">
+                    </figure>
+                    <div class="row align-items-end w-100 mx-auto">
+                        <p class="col-12 fz-20 text-secondary">Woman Sport</p>
+                        <h4 class="col-auto">$20.23</h4>
+                        <span class="fz-13 col ps-2">sale</span>
+                    </div>
+                    <div class="row w-100 mx-auto">
+                        <div class="col px-0">Vans® Filmore Hi Boys' High-Top Sneakers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/master.js"></script>
+</body>
+
+</html>

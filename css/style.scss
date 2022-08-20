@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    display: flex;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@for $i from 5 through 35 {
+    .fz-#{$i} {
+        font-size: #{$i}+'px';
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h1 {
+        font-weight: 900;
+    }
+}
+
+
+._dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(167, 167, 167);
+    padding: 15px;
+    cursor: pointer;
+    transition: 400ms;
+    &:hover{
+        border-color:  rgb(198, 198, 198);
+    }
+    p,span,i{
+        color: rgb(132 132 132);
+    }
+}
+
+._dropdown-item{
+    height: 0;
+    overflow: hidden;
+    width: 300px;
+    transition: 1s;
+    ul{
+        border:1px solid lightgray;
+        li{
+            padding:8px;
+            display: flex;
+            color: rgb(43, 43, 43);
+            font-size: 13px;
+            cursor: pointer;
+            // transition:400ms;
+            &:hover{
+                background-color: rgb(217, 218, 220);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.box-product {
+    padding: 0;
+    max-width: 300px;
+    text-align: left;
+    cursor: pointer;
+    // display: none;
+    margin: 15px;
+    span,
+    h4 {
+        color: rgb(172, 0, 0);
+        font-weight: 800;
+    }
+}
+
+.notfound{
+    display: none;
+    text-align: center;
+}
+
+
+.obj-cover {
+    object-fit: cover;
+}
+
+.group-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 40px;
+    border: 1px solid gray;
+    padding:0 10px;
+    width: 350px;
+    border-radius: 3px;
+
+    input{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border: none;
+        &:focus-visible{
+            outline: none;
+        }
+    }
+}
+
+
+.min-h-200{
+    min-height: 200px;
+}
+
+.bg-gray-hover{
+    transition: 400ms;
+    &:hover{
+        background-color: rgb(207, 207, 207);
+    }
+}
